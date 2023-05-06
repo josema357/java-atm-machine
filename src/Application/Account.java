@@ -8,7 +8,7 @@ public class Account {
      * */
     private final String accountName;
     /**
-     * El numero ID de la cuenta
+     * El numero de la cuenta
      * */
     private final String accountID;
     /**
@@ -46,7 +46,7 @@ public class Account {
     }
 
     /**
-     * obtener resumen para la cuenta
+     * Obtener resumen para la cuenta
      * @return el String del resumen
      * */
     public String getSummaryLine(){

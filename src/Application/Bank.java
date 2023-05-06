@@ -4,12 +4,21 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Bank {
+    /**
+     * Nombre del banco
+     * */
     private final String name;
+    /**
+     * Lista de usuarios del banco
+     * */
     private final ArrayList<User> users;
+    /**
+     * Lista de las cuentas del banco
+     * */
     private final ArrayList<Account> accounts;
 
     /**
-     * Crea una nuevo objeto Bank con una lista vacia de usuarios y cuentas
+     * Crea un nuevo objeto Bank con una lista vacia de usuarios y cuentas
      * @param name nombre del banco
      * */
     public Bank(String name) {

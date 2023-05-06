@@ -14,11 +14,11 @@ public class User {
      * */
     private String lastName;
     /**
-     * El numero de ID del usuario
+     * El ID del usuario
      * */
     private final String userID;
     /**
-     * El hash MD5 del numero de PIN del usuario
+     * El hash MD5 del PIN del usuario
      * */
     private byte userPIN[];
     /**
@@ -29,7 +29,7 @@ public class User {
      * Creacion de un nuevo usuario
      * @param firstName el nombre del usuario
      * @param lastName el apellido del usuario
-     * @param userPIN el numero PIN de la cuenta del usuario
+     * @param userPIN el PIN de la cuenta del usuario
      * @param theBank el objeto Bank del cual es usuario es cliente
      * */
     public User(String firstName, String lastName, String userPIN, Bank theBank) {
@@ -48,7 +48,7 @@ public class User {
         System.out.printf("Nuevo usuario creado %s, %s con ID %s.\n",lastName,firstName,this.userID);
     }
     /**
-     * Agregar un cuenta para el usuario
+     * Agregar una cuenta para el usuario
      * @param account la cuenta que sera agregada
      * */
     public void addAccount(Account account) {
@@ -92,8 +92,8 @@ public class User {
         System.out.println();
     }
     /**
-     * Obtener el numero de cuentas del usuario
-     * @return el numero de cuentas
+     * Obtener la cantidad de cuentas del usuario
+     * @return cantidad de cuentas
      * */
     public int numAccounts(){
         return this.accounts.size();
@@ -131,7 +131,7 @@ public class User {
         this.accounts.get(acctIdx).addTransaction(amount,message);
     }
     /***
-     * Busca en el usuario el indice de la cuenta ingresada
+     * Busca en el usuario, el indice de la cuenta ingresada
      * @param accountNumber numero de cuenta ingresado
      * @return el inidice de la cuenta
      */

@@ -3,9 +3,21 @@ package Application;
 import java.util.Date;
 
 public class Transaction {
+    /**
+     * Monto de la transaccion
+     * */
     private final double amount;
+    /**
+     * Hora de la transaccion
+     * */
     private final Date time;
+    /**
+     * Mensaje de la transaccion
+     * */
     private String message;
+    /**
+     * Cuenta de la transaccion
+     * */
     private Account account;
     /**
      * Creacion de una nueva transaccion
